@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Seguimiento de Usuarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Análisis de Comportamiento de Usuarios</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sesión Actual</h2>
+      <div class="current-session">
+        <p>Tiempo de sesión: <span id="session-time">0</span> segundos</p>
+        <p>Interacciones: <span id="session-interactions">0</span></p>
+        <button id="end-session" class="btn btn-primary">Finalizar Sesión</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Estadísticas Históricas</h2>
+      <div class="historical-stats">
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>Estadísticas Generales</h3>
+            <p>Total de Sesiones: <span id="total-sessions">0</span></p>
+            <p>Tiempo Promedio: <span id="avg-time">0</span> segundos</p>
+            <p>Desviación Estándar: <span id="std-deviation">0</span> segundos</p>
+          </div>
+          <div class="grid-item">
+            <h3>Percentiles (segundos)</h3>
+            <p>P25: <span id="p25">0</span></p>
+            <p>P50: <span id="p50">0</span></p>
+            <p>P75: <span id="p75">0</span></p>
+            <p>P90: <span id="p90">0</span></p>
+          </div>
+        </div>
+        <div class="session-chart">
+          <h3>Historial de Sesiones</h3>
+          <canvas id="session-chart"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Hecho por Harry XD</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
